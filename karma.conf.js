@@ -19,12 +19,9 @@ module.exports = config => config.set({
     require('karma-chai'),
     require('karma-chrome-launcher'),
     require('karma-mocha-reporter'),
-    require('karma-junit-reporter'),
-    'ChromeHeadless'
+    require('karma-junit-reporter')
   ],
   junitReporter: {
     outputDir: 'build'
-  },
-  singleRun: true,
-  browsers:["Chrome"]
+  }
 });
